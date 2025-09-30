@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script defer src="{% static 'js/sidebar.js' %}"></script>
+</head>
+<body>
+    <div class="sidebar">
+       <h2>Menú</h2>
+       <ul>
+            <li><a href="https://www.google.com" target="_blank">🌐 Google</a></li>
+
+            <li class="menu-item">
+                <a href="#">📂 Ejemplos</a>
+                <ul class="submenu">
+                    <li><a href="{% url 'Miakm' %}">- Millas a Kms</a></li>
+                    <li><a href="{% url 'Numeros' %}">- Numeros</a></li>
+                    <li><a href="{% url 'Ec2grado' %}">- Ecuacion 2 Grado</a></li>
+                    <li><a href="https://www.python.org" target="_blank">Python</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <a href="#">📖 Maquinas y Equipos</a>
+                <ul class="submenu">
+                    <li><a href="{% url 'maexcavadora' %}">- Excavadora</a></li>
+                    <li><a href="{% url 'maexcavadora' %}">- Volqueta</a></li>
+                    <li><a href="{% url 'maexcavadora' %}">- Motoniveladora</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                </ul>
+            </li>
+
+       </ul>
+    </div>
+
+</body>
+</html>
