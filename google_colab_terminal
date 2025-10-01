@@ -1,0 +1,10 @@
+pip install pyx
+
+import pyx as pyx
+print(pyx.__version__)
+
+pip install pynomo
+
+
+apt-get update
+apt-get install texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra --fix-missing
