@@ -68,7 +68,7 @@ block_1_params={
 }
 
 main_params={
-'filename':'Rend_CargadoraFrontal.pdf',
+'filename':'static/docs/Rend_CargadoraFrontal.pdf',
 'paper_height':40.0,
 'paper_width':40.0,
 'block_params':[block_1_params],
