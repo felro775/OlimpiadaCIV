@@ -1,8 +1,14 @@
 import math
+import sys
+
 from pynomo.nomographer import *
+
+a = sys.argv[1]
+b = sys.argv[2]
+
 Q_params={
 'u_min':2.0,
-'u_max':4.0,
+'u_max':int(a),
 'function':lambda u:-math.log10(u),
 'scale_type':'linear',
 'title':r'\Large $Q$',
@@ -34,7 +40,7 @@ E_params={
 
 Cm_params={
 'u_min':1.0,
-'u_max':4.0,
+'u_max':int(b),
 'function':lambda u:math.log10(u),
 'scale_type':'linear',
 'title':r'\Large $Cm$',
